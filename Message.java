@@ -9,10 +9,9 @@ public class Message implements Serializable {
     private String content;//消息内容
     private String messageType;//消息类型
     private String sendTime;//发送时间
-
     private int[] friendIds;
-    private User[] usersList;
 
+    private User[] usersList;
     //Getter
     public User getSender() {
         return sender;

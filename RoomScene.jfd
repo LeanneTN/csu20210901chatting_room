@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, par t {comp sendBtn:::p::p, par l {seq l {comp emojiBtn:::p::p, space :::p, comp fileBtn:::p::p}, comp scrollPane2::l:p:328:p, comp scrollPane1::l:p:328:p}}, space :::p, par l {seq {comp label1:::p::p, space ::58:x}, comp scrollPane3::::118:x}}}"
+			"$verticalGroup": "par l {seq l {space :::p, par t:::p {seq {comp scrollPane1:::p:164:p, space :::p, par b {comp emojiBtn::b:p::p, comp fileBtn::b:p::p}, space :::p, comp scrollPane2:::p:86:p}, seq l {comp label1:::p::p, space :::p, comp scrollPane3:::::x}}, space :::p, comp sendBtn:::p::p, space :::x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "screen"
+					"editable": false
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "messageArea"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sendBtn"
+				"text": "发送"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "emojiBtn"
+				"text": "表情"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "fileBtn"
+				"text": "文件"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane3"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "onlineUsers"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "在线用户："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 12 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 460, 340 )
+		} )
+	}
+}

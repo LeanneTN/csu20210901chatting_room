@@ -2,7 +2,6 @@ package com.DencendOO.common;
 
 import java.io.Serializable;
 
-//网络传输对象流，需要实现Serializable接口
 public class User implements Serializable {
     public static final long serialVersionUID = 1L;//增强兼容性
     private int userId;

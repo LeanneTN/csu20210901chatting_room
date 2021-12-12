@@ -1,0 +1,42 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp scrollPane1::l::426:x, seq l {comp emojiBtn:::p::p, space :::p, comp fileBtn:::p::p, space :0:0:x}, seq t {space :0:348:x, comp sendBtn:::p::p}, comp scrollPane2::t::426:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1:::p:160:p, space :::p, par l {comp emojiBtn:::p::p, comp fileBtn:::p::p}, space :::p, comp scrollPane2:::p:72:p, space :::x, comp sendBtn:::p::p, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "FridenNickname"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "screen"
+					"editable": false
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "emojiBtn"
+				"text": "表情"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "fileBtn"
+				"text": "文件"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "messageArea"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sendBtn"
+				"text": "发送"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 440, 350 )
+		} )
+	}
+}

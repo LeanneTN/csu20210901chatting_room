@@ -1,0 +1,191 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp panel3:::::x, comp tabbedPane1:::::x}, space :::p}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp panel3:::p::p, space u:::p, comp tabbedPane1::::414:x, space :::p}}"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 335, 600 )
+			"title": "主页"
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {seq {space :0:0:x, comp removeFriend:::p::p, space :::p, comp addFriend:::p::p}, comp friendListScrollPane::l::309:x}, space :::p}}"
+					"$verticalGroup": "par l {seq t {space :::p, comp friendListScrollPane::::316:x, space :::p, par b {comp addFriend::b:p::p, comp removeFriend::b:p::p}, space :::p}}"
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addFriend"
+						"maximumSize": new java.awt.Dimension( 48, 48 )
+						"minimumSize": new java.awt.Dimension( 48, 48 )
+						"preferredSize": new java.awt.Dimension( 48, 48 )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "removeFriend"
+						"maximumSize": new java.awt.Dimension( 48, 48 )
+						"minimumSize": new java.awt.Dimension( 48, 48 )
+						"preferredSize": new java.awt.Dimension( 48, 48 )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "friendListScrollPane"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+							"hgap": 10
+							"vgap": 10
+						} ) {
+							name: "panel4"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+								"columns": 1
+							} ) {
+								name: "panel12"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "North"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+								"columns": 1
+							} ) {
+								name: "panel13"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "West"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+								"columns": 1
+							} ) {
+								name: "panel14"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "South"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+								"columns": 1
+							} ) {
+								name: "panel15"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "East"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+								name: "friendList"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "Center"
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "私聊"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1::::309:x, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1::::370:x, space :::p}}"
+				} ) {
+					name: "panel2"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+							"hgap": 10
+							"vgap": 10
+						} ) {
+							name: "panel5"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+								"columns": 1
+							} ) {
+								name: "panel6"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "North"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+								"columns": 1
+							} ) {
+								name: "panel7"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "West"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+								"columns": 1
+							} ) {
+								name: "panel8"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "South"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+								"columns": 1
+							} ) {
+								name: "panel9"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "East"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+								"rows": 6
+							} ) {
+								name: "panel10"
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.HorizontalLayout ) {
+									"gap": 10
+								} ) {
+									name: "panel11"
+									add( new FormComponent( "javax.swing.JButton" ) {
+										name: "openRoom"
+										"maximumSize": new java.awt.Dimension( 60, 60 )
+										"minimumSize": new java.awt.Dimension( 60, 60 )
+										"preferredSize": new java.awt.Dimension( 60, 60 )
+										"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label3"
+										"text": "点击进入聊天室！"
+										"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+									} )
+								} )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "Center"
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "群聊"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:28:p, comp headPic:::p:88:p, space :::p, par l:::p {comp accountLabel::l:::x, comp stateLabel::l:::x, comp nicknameLabel::t:p:120:p}, space :::p, par l {comp dress:::p::p, comp exit:::p::p}, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {seq l {space :p:12:p, comp nicknameLabel:::p::p, space :::p, comp stateLabel:::p::p, space :::p, comp accountLabel:::p::p}, comp headPic::l:p:88:p, seq l {comp dress:::p::p, space :::p, comp exit:::p::p}}, space :::x}}"
+			} ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headPic"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nicknameLabel"
+					"text": "昵称：XXX"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "stateLabel"
+					"text": "状态：【在线】"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "accountLabel"
+					"text": "账号：XXX"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "exit"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 12 )
+					"maximumSize": new java.awt.Dimension( 40, 40 )
+					"minimumSize": new java.awt.Dimension( 40, 40 )
+					"preferredSize": new java.awt.Dimension( 40, 40 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "dress"
+					"maximumSize": new java.awt.Dimension( 40, 40 )
+					"minimumSize": new java.awt.Dimension( 40, 40 )
+					"preferredSize": new java.awt.Dimension( 40, 40 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 90, 0 )
+			"size": new java.awt.Dimension( 335, 570 )
+		} )
+	}
+}
